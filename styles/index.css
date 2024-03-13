@@ -1,0 +1,47 @@
+:root{      
+    --sizeBlock: 240px;
+}
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    margin: 16px;
+
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    
+    position: relative;
+}
+
+#slider {
+    margin: 16px 0;  	
+    width: 97%;
+}
+
+.block {
+    width: var(--sizeBlock);
+    height: var(--sizeBlock);
+    position: absolute;   
+}
+
+.left{
+    top: 60px;
+    left: 0;
+
+    background-color: aqua;
+}
+
+.right{  
+   right: 0;
+   top: 360px;
+   left: calc(100% - var(--sizeBlock));
+
+   background-color: chartreuse; 
+}
